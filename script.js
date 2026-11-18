@@ -1,4 +1,10 @@
-const JOBS_STORAGE_KEY = "amg_holding_jobs_v1";
+const SUPABASE_URL = "YOUR_PROJECT_URL";
+const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);const JOBS_STORAGE_KEY = "amg_holding_jobs_v1";
 const APPLICANTS_STORAGE_KEY = "amg_holding_applicants_v1";
 
 const DEFAULT_JOBS = [
